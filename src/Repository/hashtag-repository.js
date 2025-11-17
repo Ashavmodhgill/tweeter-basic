@@ -24,6 +24,9 @@ class HashtagRepository {
         try {
             const tags = await Hashtag.find({
                 title: titleList
+                title: {
+                    $in: titleList
+                }
             });
             return tags;
         } catch (error) {
