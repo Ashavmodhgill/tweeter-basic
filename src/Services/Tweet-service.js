@@ -1,4 +1,4 @@
-const {TweetRepository, hashtagRepository}= require('../Repository/index');
+import {TweetRepository,hashtagRepository} from '../Repository/index.js'
 
 
 class tweetService {
@@ -30,4 +30,4 @@ async create(data){
 
 
 
-module.exports = tweetService;
+export default tweetService;
