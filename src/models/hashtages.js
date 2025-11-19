@@ -11,9 +11,8 @@ const hashtagSchema =  new mongoose.Schema({
             ref: 'Tweet'
         }
     ]
-},{timeseries: true})
 },{timestamps: true})
-}, { timestamps: true });
+
 
 const Hashtag = mongoose.model('Hashtag', hashtagSchema);
 
