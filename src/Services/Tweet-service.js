@@ -1,3 +1,4 @@
+import Tweet from '../models/tweet.js';
 import {TweetRepository,hashtagRepository} from '../Repository/index.js'
 
 
@@ -28,7 +29,13 @@ async create(data){
      })
      return tweet;
 }
+
+async get(TweetId){
+    const tweet = await this.tweetRepository.getwithComments(TweetId);
+    return tweet;
 }
+}
+
 
 
 

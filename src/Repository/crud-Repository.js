@@ -50,6 +50,16 @@
         }
 
     }
+   async findOne(filter) {
+  try {
+    const result = await this.model.findOne(filter);
+    return result;
+  } catch (error) {
+    console.log("Something went wrong in crud repo");
+    throw error;
+  }
+}
+
 
     async Update(id,data){
         try {
