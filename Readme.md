@@ -1,1 +1,2 @@
-# this projeect will going to have the basic backend of tweeter
+# this projeect will going to have the basic backend of twitter
+
